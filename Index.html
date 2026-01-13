@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siddha Research</title>
+  <style>
+    :root {
+      --green-dark: #2e7d32;
+      --green-main: #4caf50;
+      --green-light: #c8e6c9;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--white);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, var(--green-dark), var(--green-main));
+      color: white;
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-color: var(--green-light);
+      padding: 4rem 3rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      color: var(--green-dark);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+    .section {
+      padding: 3rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h3 {
+      color: var(--green-dark);
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      border: 1px solid var(--green-light);
+      border-radius: 10px;
+      padding: 1.5rem;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h4 {
+      color: var(--green-main);
+      margin-top: 0;
+    }
+
+    .cta {
+      background: var(--green-main);
+      color: white;
+      text-align: center;
+      padding: 3rem;
+    }
+
+    .cta h3 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .cta button {
+      background: white;
+      color: var(--green-dark);
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .cta button:hover {
+      background: var(--green-light);
+    }
+
+    footer {
+      background: #f5f5f5;
+      padding: 2rem 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      color: var(--green-dark);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Siddha Research</h1>
+    <nav>
+      <a href="#dataviz">Data Viz</a>
+      <a href="#research">Current Research</a>
+      <a href="#methods">Blogs</a>
+      <a href="#reading">Documents</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Siddha Research • Data • Methods</h2>
+    <p>
+      A personal knowledge and skills showcase documenting Siddha-related research,
+      data visualisations, methodology explainers, and curated reading materials.
+    </p>
+  </section>
+
+  <section class="section" id="dataviz">
+    <h3>Data Visualisation</h3>
+    <p>
+      Interactive and static visualisations exploring Siddha usage, Ayush and 
+      public health datasets, and research findings using tools like R, Tableau, and Excel.
+    </p>
+    <div class="cards">
+      <div class="card">
+        <h4> Dashboards</h4>
+        <p>State and district-level insights on Siddha and Ayush using Public datsets.</p>
+      </div>
+      <div class="card">
+        <h4>Research Infographics</h4>
+        <p>Visual summaries of Siddha-related studies for quick understanding.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="research">
+    <h3>Current Research</h3>
+    <p>
+      A curated collection of recent and impactful Siddha research articles,
+      including clinical studies, pharmacological research, and systems-level analyses.
+    </p>
+    <div class="cards">
+      <div class="card">
+        <h4>Clinical & Review Studies</h4>
+        <p>Evidence on efficacy, safety, and clinical outcomes.</p>
+      </div>
+      <div class="card">
+        <h4>Preclinical Studies</h4>
+        <p> Invitro, insilico and Invivo studies.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="methods">
+    <h3>Blogs </h3>
+    <p>
+      Simplified explanations of research methods, study designs, data analysis,
+      and evidence synthesis—tailored for Siddha and integrative medicine research.
+    </p>
+    <div class="cards">
+      <div class="card">
+        <h4>Study Design Basics</h4>
+        <p>Observational studies, trials, and mixed-method approaches.</p>
+      </div>
+      <div class="card">
+        <h4>Data Analysis & Visualisation</h4>
+        <p>R workflows, Tableau dashboards, and reproducible research.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reading">
+    <h3>Reading Materials</h3>
+    <p>
+      Hand-picked books, reports, classical texts, and review articles
+      relevant to Siddha medicine and public health research.
+    </p>
+    <div class="cards">
+      <div class="card">
+        <h4>Classical Siddha Texts</h4>
+        <p>Foundational literature and commentaries.</p>
+      </div>
+      <div class="card">
+        <h4>Modern Reviews & Reports</h4>
+        <p>Systematic reviews, policy documents, and technical reports.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <h3>Start Your Research Journey</h3>
+    <p>If you wanr to join , reach out to us for more information.</p>
+    <p>Mail : Siddharesarch@gmail.com.</p>
+    <button>Contact Us</button>
+  </section>
+
+  <footer>
+    © 2026 <span>Siddha Research </span> 
+  </footer>
+
+</body>
+</html>
